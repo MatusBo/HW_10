@@ -1,0 +1,243 @@
+@font-face {
+  font-family: "BasisGrotesquePro";
+  src: url(./fonts/BasisGrotesquePro-Bold.woff) format("woff"),
+    url(./fonts/BasisGrotesquePro-Bold.woff2) format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "BasisGrotesquePro";
+  src: url(./fonts/BasisGrotesquePro-Light.woff) format("woff"),
+    url(./fonts/BasisGrotesquePro-Light.woff2) format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "BasisGrotesquePro";
+  src: url(./fonts/BasisGrotesquePro-Medium.woff) format("woff"),
+    url(./fonts/BasisGrotesquePro-Medium.woff2) format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "BasisGrotesquePro";
+  src: url(./fonts/BasisGrotesquePro-Regular.woff) format("woff"),
+    url(./fonts/BasisGrotesquePro-Regular.woff2) format("woff2");
+  font-weight: 400;
+}
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  width: 100vw;
+  max-width: 1440px;
+  position: absolute;
+  display: flex;
+  padding: 1vw 0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+.lang {
+  margin-right: 2vw;
+}
+
+header div p {
+  opacity: 35%;
+  margin-left: 7vw;
+  font-family: "BasisGrotesquePro";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.logo {
+  position: absolute;
+  margin-top: 2vw;
+  margin-left: 3vw;
+  width: 3vw;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  display: flex;
+  align-items: flex-start;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  margin: 0vw;
+  padding: 0vw;
+  list-style: none;
+  gap: 3vw;
+}
+
+a,
+.lang p {
+  text-decoration: none;
+  color: black;
+  font-family: "BasisGrotesquePro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  text-transform: uppercase;
+  margin-right: 7px;
+}
+
+.menu-icon {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  vertical-align: -0.125em;
+}
+
+.menu {
+  display: none;
+}
+
+.place {
+  height: 100px;
+  width: 100px;
+}
+
+.arrow_div {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  margin-top: 5px;
+}
+
+.ou {
+  display: flex;
+}
+
+.ou .arrow_div {
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+section {
+  padding: 10vw 2vw 10vw 10vw;
+}
+
+.svg {
+    animation-name: arrow;
+    animation-duration: 2s;
+   transform: translateY(50px);
+    transition: ease-out;
+ 
+}
+
+@keyframes arrow {
+0% {
+   color: #0536fc;
+}
+
+50% {
+    color: aqua;
+}
+}
+
+.buttons {
+  display: flex;
+}
+
+.with-arrow {
+    display: flex;
+    justify-content: space-between;
+}
+
+h3 {
+  font-family: "BasisGrotesquePro";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0, 03em;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0 auto 2vh auto;
+  color: #0536fc;
+}
+
+p {
+  opacity: 60%;
+  font-family: "BasisGrotesquePro";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+h1 {
+  color: black;
+  font-family: "BasisGrotesquePro";
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 42px;
+  letter-spacing: -0, 03em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.buttons input[type="radio"] {
+  display: none;
+}
+
+.buttons label {
+  display: inline-block;
+  border: 1px solid rgb(200, 198, 198);
+  text-align: center;
+  padding: 2vw;
+  font-family: "BasisGrotesquePro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  width: 50%;
+  color: #0536fc;
+}
+
+.buttons input:checked + label {
+  background-color: #0536fc;
+  color: #ffffff;
+  transition: 800ms;
+}
+
+@media screen and (max-width: 900px) {
+  .menu {
+    display: inline-block;
+  }
+
+  ul {
+    display: none;
+  }
+}
