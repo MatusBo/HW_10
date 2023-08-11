@@ -147,21 +147,20 @@ section {
   padding: 10vw 2vw 10vw 10vw;
 }
 
-.svg {
-    animation-name: arrow;
-    animation-duration: 2s;
-   transform: translateY(50px);
-    transition: ease-out;
- 
+article svg {
+    animation: arrow 2s ease-in-out infinite; 
 }
 
 @keyframes arrow {
 0% {
-   color: #0536fc;
+   transform: translateY(0px);
 }
 
 50% {
-    color: aqua;
+  transform: translateY(30px);
+}
+
+100% {transform: translateY(0px);
 }
 }
 
